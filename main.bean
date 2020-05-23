@@ -1,5 +1,11 @@
 2020-01-01 open Assets:Bank:Cathay TWD
+2020-01-01 open Assets:Cash TWD
 2020-01-01 open Expenses:Living:HouseRent
+2020-01-01 open Expenses:Food:Drink
+2020-01-01 open Expenses:Food:Regular
+2020-01-01 open Income:Salary
+2020-01-01 open Liabilities:Ming
+2020-01-01 open Liabilities:Mei
 2020-01-01 open Equity:Opening-Balances
 
 option "operating_currency" "TWD"
@@ -8,7 +14,22 @@ option "operating_currency" "TWD"
   Assets:Bank:Cathay 50000 TWD
   Equity:Opening-Balances
 
-2020-04-13 * "房租"
+2020-01-05 * "薪水"
+  Assets:Bank:Cathay 23000 TWD
+  Income:Salary
+
+2020-01-10 * "房租"
   Expenses:Living:HouseRent 10,000 TWD
   Assets:Bank:Cathay
+
+2020-01-12 * "轉帳"
+  Assets:Cash 3000 TWD
+  Assets:Bank:Cathay
+
+2020-01-13 * "晚餐"
+  Assets:Cash -1000 TWD
+  Liabilities:Ming 300 TWD
+  Liabilities:Mei 400 TWD
+  Expenses:Food:Regular
+
 
