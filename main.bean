@@ -8,7 +8,10 @@
 2020-01-01 open Liabilities:Mei
 2020-01-01 open Equity:Opening-Balances
 
+option "booking_method" "FIFO"
 option "operating_currency" "TWD"
+
+include "cryptos.bean"
 
 2020-01-01 * "初始金額"
   Assets:Bank:Cathay 50000 TWD

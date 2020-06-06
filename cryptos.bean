@@ -1,0 +1,37 @@
+2020-01-01 open Assets:Crypto:Max:TWD TWD
+2020-01-01 open Assets:Crypto:Max:ETH ETH
+2020-01-01 open Assets:Crypto:Max:MAX MAX
+2020-01-01 open Income:Crypto:PnL
+2020-01-01 open Expenses:Crypto:TransactionFee
+
+2020-02-20 * "存入 Max"
+    Assets:Crypto:Max:TWD 10000 TWD
+    Assets:Bank:Cathay
+
+2020-02-20 * "買 MAX"
+    Assets:Crypto:Max:TWD -350 TWD
+    Assets:Crypto:Max:MAX 100 MAX {3.5 TWD}
+
+2020-02-21 * "buy 1 eth"
+    Assets:Crypto:Max:TWD -1000 TWD
+    Assets:Crypto:Max:ETH 1 ETH {1000 TWD}
+    Assets:Crypto:Max:MAX -2 MAX {}
+    Expenses:Crypto:TransactionFee 2 MAX {3.3 TWD}
+    Income:Crypto:PnL
+
+2020-02-22 * "buy 4 eth"
+    Assets:Crypto:Max:TWD -2000 TWD
+    Assets:Crypto:Max:ETH 4 ETH {500 TWD}
+    Assets:Crypto:Max:MAX -2 MAX {}
+    Expenses:Crypto:TransactionFee 2 MAX {3.1 TWD}
+    Income:Crypto:PnL
+
+2020-02-23 * "sell 2 eth"
+    Assets:Crypto:Max:ETH -2 ETH {}
+    Assets:Crypto:Max:TWD 5000 TWD
+    Assets:Crypto:Max:MAX -2 MAX {}
+    Expenses:Crypto:TransactionFee 2 MAX {3.0 TWD}
+    Income:Crypto:PnL
+
+2020-02-23 price ETH 2500 TWD
+
